@@ -7,7 +7,9 @@ import { ThemeProvider } from "./components/theme/theme-provider.tsx";
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <ThemeProvider>
-      <App />
+      <div style={{ height: 800 }}>
+        <App />
+      </div>
     </ThemeProvider>
   </StrictMode>,
 );

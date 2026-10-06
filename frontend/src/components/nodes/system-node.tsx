@@ -7,11 +7,11 @@ import {
   BaseNodeFooter,
   BaseNodeHeader,
   BaseNodeHeaderTitle,
-} from "@/components/base-node";
+} from "@/components/base/base-node";
 import { Rocket } from "lucide-react";
 import { Handle, Position } from "@xyflow/react";
 
-export const BaseNodeFullDemo = memo(() => {
+export const SystemNode = memo(() => {
   return (
     <BaseNode className="w-96">
       <BaseNodeHeader className="border-b">
@@ -20,10 +20,7 @@ export const BaseNodeFullDemo = memo(() => {
       </BaseNodeHeader>
       <BaseNodeContent>
         <h3 className="text-lg font-bold">Content</h3>
-        <p className="text-xs">
-          This is a full-featured node with a header, content, and footer. You
-          can customize it as needed.
-        </p>
+        <p className="text-xs">{"{...}"}</p>
       </BaseNodeContent>
       <BaseNodeFooter>
         <h4 className="text-md self-start font-bold">Footer</h4>
@@ -47,4 +44,4 @@ export const BaseNodeFullDemo = memo(() => {
   );
 });
 
-BaseNodeFullDemo.displayName = "BaseNodeFullDemo";
+SystemNode.displayName = "SystemNode";
